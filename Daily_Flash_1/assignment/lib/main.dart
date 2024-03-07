@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
               boxShadow: const [
                 BoxShadow(
                   color: Colors.red, // Shadow color
-                  blurRadius: 10, // Spread of the shadow
+                  blurRadius: 20, // Spread of the shadow
                   offset: Offset(0, 4), // Offset of the shadow
                 ),
               ],

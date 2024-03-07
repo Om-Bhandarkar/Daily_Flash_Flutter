@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,19 +15,23 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: Container(
-            height: 200,
             width: 200,
+            height: 100,
+            padding: const EdgeInsets.all(20), // Add padding
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.red),
-              borderRadius: BorderRadius.circular(10),
+              border: Border.all(color: Colors.black, width: 2), // Border
+              borderRadius: const BorderRadius.only(
+                topLeft: Radius.circular(20), // Top left corner rounded
+                bottomRight: Radius.circular(20), // Bottom right corner rounded
+              ),
             ),
             child: const Center(
               child: Text(
-                'Hello World',
+                'Om Bhandarkar',
+                textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 16,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black,
                 ),
               ),
             ),
